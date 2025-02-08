@@ -1,32 +1,74 @@
-# JadenWilder.github.io
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jaden Wilder - Personal Profile</title>
 </head>
 <body>
-    <h1>
-Jaden Wilder</h1>
-    
+
+    <h1>Jaden Wilder</h1>
+
     <h2>About Me</h2>
     <p>My name is Jaden Wilder. I am an 18-year-old freshman at Newberry College, majoring in Computer Science with a path leading to software development. I enjoy gaming, listening to music, and drawing occasionally.</p>
-    
+
     <h2>My Favorite Hobby</h2>
     <p>My hobbies consist of gaming, listening to music, and drawing sometimes. Music to me is a relaxer and even motivation. There is a song for every way I feel. Gaming is the hobby I do the most. It's a way for me to take my mind off of work or even problems. Whether I’m exploring new worlds, competing with friends, or just enjoying a great story, gaming helps me relax and have fun.</p>
-    
+
+    <!-- Added Image -->
+    <img src="gaming-setup.jpg" alt="A gaming setup with RGB lights" width="500">
+
     <h2>Favorite Books</h2>
     <ol>
         <li>The Great Gatsby</li>
         <li>The Pearl</li>
         <li>Of Mice And Men</li>
     </ol>
-    
+
     <h3>Least Favorite Movies</h3>
     <ul>
         <li>Any of the Mad Max movies</li>
         <li>Suicide Squad 2</li>
     </ul>
+
+    <!-- Added Favorite Website -->
+    <h2>My Favorite Website</h2>
+    <p>Check out my favorite website: <a href="https://www.steampowered.com" target="_blank">Steam</a></p>
+
+    <!-- Added Class Schedule Table -->
+    <h2>My Class Schedule</h2>
+    <table border="1">
+        <tr>
+            <th>Class Name</th>
+            <th>Class Day/Time</th>
+            <th>Class Description</th>
+        </tr>
+        <tr>
+            <td>Pre-Calculus</td>
+            <td>Monday 9:55-10:45 AM, Tuesday & Thursday 9:15-10:30 AM</td>
+            <td>Mathematics course covering functions, equations, and trigonometry.</td>
+        </tr>
+        <tr>
+            <td>English 113</td>
+            <td>Monday, Wednesday, Friday 11:00-11:50 AM</td>
+            <td>Introductory English course focusing on composition and literature.</td>
+        </tr>
+        <tr>
+            <td>History</td>
+            <td>Monday, Wednesday, Friday 12:05-12:55 PM</td>
+            <td>Exploration of historical events and their impact on modern society.</td>
+        </tr>
+        <tr>
+            <td>College Life</td>
+            <td>Wednesday 8:50-9:40 AM</td>
+            <td>Guidance course on college success and personal development.</td>
+        </tr>
+        <tr>
+            <td>Online Courses</td>
+            <td>Flexible Schedule</td>
+            <td>Two additional online classes for academic enrichment.</td>
+        </tr>
+    </table>
+
 </body>
 </html>
