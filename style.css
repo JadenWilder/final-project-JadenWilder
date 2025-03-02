@@ -1,25 +1,26 @@
 /* General Styles */
-body {
+body.body-class {
     font-family: Arial, sans-serif;
     text-align: center;
+    background-color: #f0f8ff; /* Light background for contrast */
 }
 
 /* Header Styling */
-header {
-    background-color: darkblue;
+header.header-class {
+    background-color: #003366; /* Dark blue */
     color: white;
     padding: 20px;
 }
 
 /* Paragraph Styling */
-header p {
+header.header-class p.text-class {
     color: lightgray;
     font-size: 18px;
 }
 
 /* Navigation Bar */
-nav {
-    background-color: navy;
+nav.nav-class {
+    background-color: #00509e; /* Different navy */
     padding: 10px;
 }
 
@@ -49,11 +50,11 @@ button {
 }
 
 /* About Me Section */
-#about h2 {
+#about h2.title-class {
     color: darkred;
 }
 
-#about p {
+#about p.text-class {
     color: darkgreen;
 }
 
@@ -72,7 +73,7 @@ button {
 }
 
 /* Contact Form Styling */
-form {
+form.form-class {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
@@ -96,8 +97,35 @@ input, textarea {
 }
 
 /* Submit Button */
-button[type="submit"] {
+button.button-class {
     background-color: darkblue;
     color: white;
     font-size: 18px;
+}
+
+/* Image Class */
+.image-class {
+    border: 3px solid #00509e; /* Complementary border color */
+    border-radius: 5px;
+}
+
+/* Footer Styling */
+footer.footer-class {
+    background-color: #003366; /* Dark blue background */
+    color: white;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .content {
+        width: 90%;
+    }
+
+    form.form-class {
+        width: 90%;
+    }
 }
