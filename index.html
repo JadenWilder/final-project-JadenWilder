@@ -6,73 +6,84 @@
     <title>Jaden Wilder - Personal Website</title>
     <link rel="stylesheet" href="style.css">
     <script>
-        function toggleSection(id) {
+        function toggleSection(id, color) {
             var sections = document.getElementsByClassName("content");
             for (var i = 0; i < sections.length; i++) {
                 sections[i].style.display = "none";
             }
             document.getElementById(id).style.display = "block";
+
+            // Change background color of the body
+            document.body.style.backgroundColor = color;
         }
+        
     </script>
 </head>
-<body>
-    <header>
-        <h1>Welcome to My Website</h1>
-        <p>Explore to learn more about me, my experiences, and how to contact me.</p>
+<body class="body-class">
+    <header class="header-class">
+        <h1 class="title-class">Welcome to My Website</h1>
+        <p class="text-class">Explore to learn more about me, my experiences, and how to contact me.</p>
     </header>
-    
-    <nav>
-        <button onclick="toggleSection('about')">About Me</button>
-        <button onclick="toggleSection('resume')">Resume</button>
-        <button onclick="toggleSection('contact')">Contact Me</button>
+    <img src="https://cdn.glitch.global/aa2ac535-83c9-4b65-9eda-46317f1dce0f/IMG_3182.jpeg?v=1740939650001" width="300" height="400">
+    <nav class="nav-class">
+        <button onclick="toggleSection('about', '#f0f8ff')">About Me</button>
+        <button onclick="toggleSection('resume', '#d1e7dd')">Resume</button>
+        <button onclick="toggleSection('contact', '#fff3cd')">Contact Me</button>
     </nav>
 
     <div id="about" class="content">
-        <h2>About Me</h2>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Gaming_PC_Setup.jpg" alt="Gaming setup" width="300">
-        <p>My name is Jaden Wilder. I am an 18-year-old freshman at Newberry College, majoring in Computer Science with a focus on software development.</p>
-        <p>In my free time, I enjoy gaming, listening to music, and drawing.</p>
+        <h2 class="section-title-class">About Me</h2>
+      <video width="320" height="240" controls>
+  <source src="https://cdn.glitch.me/aa2ac535-83c9-4b65-9eda-46317f1dce0f/2f938fb9e3f045c5a6b5ba939f835cc6.mp4?v=1740941798262" type="video/mp4">
+  
+</video>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Gaming_PC_Setup.jpg" alt="Gaming setup" class="image-class" width="300">
+        <p class="text-class">My name is Jaden Wilder. I am an 19-year-old freshman at Newberry College, majoring in Computer Science with a focus on software development.</p>
+        <p class="text-class">In my free time, I enjoy gaming, listening to music, and drawing.</p>
     </div>
 
     <div id="resume" class="content">
-        <h2>My Resume</h2>
-        <h3>Education</h3>
-        <p>Newberry College - Major: Computer Science</p>
+        <h2 class="section-title-class">My Resume</h2>
+        <h3 class="section-title-class">Education</h3>
+        <p class="text-class">Newberry College - Major: Computer Science</p>
         
-        <h3>Skills</h3>
+        <h3 class="section-title-class">Skills</h3>
         <ul>
-            <li>HTML, CSS, JavaScript</li>
-            <li>Python, Java</li>
-            <li>GitHub</li>
-            <li>Problem Solving</li>
-            <li>Customer Service</li>
+            <li class="text-class">HTML, CSS, JavaScript</li>
+            <li class="text-class">Python, Java</li>
+            <li class="text-class">GitHub</li>
+            <li class="text-class">Problem Solving</li>
+            <li class="text-class">Customer Service</li>
         </ul>
         
-        <h3>Work Experience</h3>
-        <p>Voter Registration Office - 2 years of experience</p>
-        <p>365 hours of community service</p>
+        <h3 class="section-title-class">Work Experience</h3>
+        <p class="text-class">Voter Registration Office - 2 years of experience</p>
+        <p class="text-class">365 hours of community service</p>
     </div>
 
     <div id="contact" class="content">
-        <h2>Contact Me</h2>
-        <p>Phone: 803-757-2862</p>
-        <p>Email: jaden.wilder@newberry.edu</p>
+        <h2 class="section-title-class">Contact Me</h2>
+        <p class="text-class">Phone: 803-757-2862</p>
+        <p class="text-class">Email: jaden.wilder@newberry.edu</p>
         
-        <form>
-            <label for="name">Name:</label>
+        <form class="form-class">
+            <label for="name" class="text-class">Name:</label>
             <input type="text" id="name" name="name" required><br><br>
             
-            <label for="email">Email:</label>
+            <label for="email" class="text-class">Email:</label>
             <input type="email" id="email" name="email" required><br><br>
             
-            <label for="subject">Subject:</label>
+            <label for="subject" class="text-class">Subject:</label>
             <input type="text" id="subject" name="subject" required><br><br>
             
-            <label for="message">Message:</label><br>
+            <label for="message" class="text-class">Message:</label><br>
             <textarea id="message" name="message" rows="4" cols="30" required></textarea><br><br>
             
-            <button type="submit">Submit</button>
+            <button type="submit" class="button-class">Submit</button>
         </form>
     </div>
+    <footer class="footer-class">
+        <p class="text-class">© 2025 Jaden Wilder. All rights reserved.</p>
+    </footer>
 </body>
 </html>
