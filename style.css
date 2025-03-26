@@ -1,21 +1,32 @@
-/* General body styling */
-.body-class {
-    background-color: #f4f4f4;
-    font-family: Arial, sans-serif;
-    color: #333;
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Header styling */
-.header-class {
-    background-color: #2c3e50;
-    color: white;
-    padding: 20px;
+/* 📌 Subtle Background for Body */
+.body-class {
+    background-color: #f8f9fa; /* Light gray for a soft, neutral background */
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.6;
     text-align: center;
 }
 
-/* Navigation styling */
+/* 📌 Header Styling: High Contrast for Visibility */
+.header-class {
+    background-color: #2c3e50; /* Dark navy for contrast */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* 📌 Navigation Styling */
 .nav-class {
-    background-color: #34495e;
+    background-color: #34495e; /* Deep blue-gray */
     padding: 10px;
     text-align: center;
 }
@@ -23,69 +34,113 @@
 .nav-class a {
     color: white;
     text-decoration: none;
-    margin: 0 15px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 1rem;
+    font-weight: normal;
+    transition: color 0.3s ease-in-out, font-weight 0.3s ease-in-out;
+}
+
+.nav-class a:hover,
+.nav-class a.active {
+    color: #f1c40f; /* Highlight active link */
     font-weight: bold;
 }
 
-.nav-class a:hover {
-    text-decoration: underline;
-}
-
-/* Titles and section headers */
+/* 📌 Titles with Distinct Colors */
 .title-class {
-    color: #e74c3c;
+    color: #e74c3c; /* Red for impact */
+    font-size: 2.5rem;
+    font-weight: bold;
 }
 
 .section-title-class {
-    color: #2980b9;
+    color: #2980b9; /* Deep blue */
+    font-size: 2rem;
+    margin-bottom: 15px;
 }
 
-/* General text styling */
+/* 📌 General Text Styling */
 .text-class {
-    color: #2c3e50;
+    color: #2c3e50; /* Darker blue-gray for readability */
+    font-size: 1.1rem;
+    margin: 10px auto;
+    max-width: 80%;
 }
 
-/* Image styling */
+/* 📌 Image Styling */
 .image-class {
-    border: 3px solid #e74c3c;
+    border: 4px solid #e74c3c; /* Red border for contrast */
     width: 100%;
-    max-width: 600px;
+    max-width: 500px;
+    border-radius: 10px;
     display: block;
     margin: 20px auto;
+    transition: transform 0.3s ease-in-out;
 }
 
-/* Forms and buttons */
+.image-class:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* 📌 Forms and Buttons */
 .form-class {
     background-color: #ecf0f1;
     padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.input-class {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #2980b9;
     border-radius: 5px;
+    font-size: 1rem;
 }
 
 .button-class {
-    background-color: #27ae60;
+    background-color: #27ae60; /* Green for action */
     color: white;
-    padding: 10px 20px;
+    padding: 10px 15px;
     border: none;
+    font-size: 1rem;
     cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    border-radius: 5px;
 }
 
 .button-class:hover {
-    background-color: #2ecc71;
+    background-color: #2ecc71; /* Lighter green on hover */
 }
 
-/* Footer */
+/* 📌 Footer Styling */
 .footer-class {
-    background-color: #2c3e50;
+    background-color: #2c3e50; /* Matching dark blue-gray */
     color: white;
-    text-align: center;
-    padding: 10px;
+    padding: 15px;
     margin-top: 20px;
+    font-size: 0.9rem;
 }
 
-/* Responsive Design */
+/* ✅ Accessibility Features */
+a:focus,
+button:focus,
+input:focus {
+    outline: 2px solid #f1c40f; /* Yellow focus ring for better visibility */
+}
+
+/* ✅ Responsive Design */
 @media (max-width: 768px) {
-    .nav-class {
+    .hero-section-class, .about-section-class {
+        max-width: 90%;
+    }
+
+    .nav-class a {
         display: block;
-        text-align: center;
+        padding: 10px;
     }
 }
