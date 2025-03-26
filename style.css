@@ -1,47 +1,91 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CSS Crusher - Home</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body class="body-class">
+/* General body styling */
+.body-class {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
 
-  <header class="header-class">
-    <h1 class="title-class">CSS Crusher</h1>
-    <nav class="nav-class">
-      <a href="#" class="nav-link-class active">Home</a>
-      <a href="#" class="nav-link-class">About</a>
-      <a href="#" class="nav-link-class">Gallery</a>
-      <a href="#" class="nav-link-class">Contact</a>
-    </nav>
-  </header>
+/* Header styling */
+.header-class {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
 
-  <section class="hero-section-class">
-    <h2 class="section-title-class">Welcome to CSS Crusher!</h2>
-    <p class="text-class">The ultimate savior of web design! Transforming dull layouts into stunning experiences.</p>
-    <img src="https://media.istockphoto.com/id/1360219351/photo/female-superhero-in-suit-standing-on-rooftop-with-sparks-radiating-from-hands.jpg?s=1024x1024&w=is&k=20&c=zd_jNIPuRS_f5YhQb1Y8yCS39DUNI8YXLKuX61fwFPs=" 
-         alt="CSS Crusher Hero Image" class="image-class">
-  </section>
+/* Navigation styling */
+.nav-class {
+    background-color: #34495e;
+    padding: 10px;
+    text-align: center;
+}
 
-  <section class="about-section-class">
-    <h2 class="section-title-class">Who is CSS Crusher?</h2>
-    <p class="text-class">CSS Crusher is a superhero of styling, fighting against poor UI design and bad UX experiences. Join the movement for visually stunning web pages!</p>
-  </section>
+.nav-class a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
 
-  <section class="newsletter-section-class">
-    <h2 class="section-title-class">Sign Up for Updates</h2>
-    <form class="form-class">
-      <label for="newsletter-email" class="label-class">Email:</label>
-      <input type="email" id="newsletter-email" name="newsletter-email" class="input-class" placeholder="Enter your email">
-      <button type="submit" class="button-class">Sign Up</button>
-    </form>
-  </section>
+.nav-class a:hover {
+    text-decoration: underline;
+}
 
-  <footer class="footer-class">
-    <p class="text-class">© 2025 by CSS Crusher. Designed with passion and style.</p>
-  </footer>
+/* Titles and section headers */
+.title-class {
+    color: #e74c3c;
+}
 
-</body>
-</html>
+.section-title-class {
+    color: #2980b9;
+}
+
+/* General text styling */
+.text-class {
+    color: #2c3e50;
+}
+
+/* Image styling */
+.image-class {
+    border: 3px solid #e74c3c;
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Forms and buttons */
+.form-class {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.button-class {
+    background-color: #27ae60;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.button-class:hover {
+    background-color: #2ecc71;
+}
+
+/* Footer */
+.footer-class {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-class {
+        display: block;
+        text-align: center;
+    }
+}
