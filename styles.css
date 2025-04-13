@@ -1,0 +1,141 @@
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Base Styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background-color: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header & Navigation */
+header {
+  background-color: #004080;
+  color: white;
+  padding: 1rem 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover,
+nav a:focus {
+  text-decoration: underline;
+}
+
+/* Main Content Area */
+main {
+  padding: 2rem;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  background-color: #cce6ff;
+  padding: 3rem 1rem;
+  border-radius: 10px;
+}
+
+/* Charity Cards */
+.charity-list {
+  display: grid;
+  gap: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.charity-card {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.charity-card h3 {
+  margin-top: 0;
+}
+
+/* Buttons */
+.cta-button,
+button {
+  background-color: #0073e6;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.cta-button:hover,
+button:hover {
+  background-color: #005bb5;
+}
+
+.cta-button:focus,
+button:focus {
+  outline: 3px solid #003d80;
+}
+
+/* Forms */
+form {
+  max-width: 500px;
+  margin-top: 1rem;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* Footer */
+footer {
+  background-color: #004080;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 3rem;
+}
+
+/* Accessibility Enhancements */
+a:focus,
+button:focus,
+input:focus {
+  outline: 3px solid #ffaa00;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0s !important;
+    transition-duration: 0s !important;
+  }
+}
