@@ -27,4 +27,14 @@ document.getElementById("volunteer-button").addEventListener("click", function()
     }
   });
 });
+const charityName = document.getElementById("charity-name");
+const charityDetails = document.getElementById("charity-details");
+
+charityName.addEventListener("mouseover", function() {
+  charityDetails.style.display = "block"; // Show additional details
+});
+
+charityName.addEventListener("mouseout", function() {
+  charityDetails.style.display = "none"; // Hide additional details
+});
 
