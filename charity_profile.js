@@ -1,20 +1,24 @@
-// Get elements
+// Get button and form elements
 const volunteerBtn = document.getElementById('volunteer-now-btn');
 const volunteerForm = document.getElementById('volunteer-form');
-const description = document.querySelector('.charity-profile p');
 
-// When "Volunteer Now" is clicked, show the form
+// Show the form when the button is clicked
 volunteerBtn.addEventListener('click', () => {
   volunteerForm.style.display = 'block';
-  volunteerBtn.style.display = 'none'; // Hide the button after clicked
+  volunteerBtn.style.display = 'none';
 });
 
-// BONUS: Add extra info when user hovers over the description
+// BONUS: Add extra info on hover (interactivity via DOM)
+const description = document.querySelector('.charity-profile p');
+
 description.addEventListener('mouseenter', () => {
-  const extraInfo = document.createElement('p');
-  extraInfo.id = 'extra-info';
-  extraInfo.textContent = "Fun Fact: The Red Cross responds to over 60,000 disasters every year!";
-  description.parentElement.appendChild(extraInfo);
+  if (!document.getElementById('extra-info')) {
+    const extraInfo = document.createElement('p');
+    extraInfo.id = 'extra-info';
+    extraInfo.textContent = "Fun Fact: The Red Cross responds to over 60,000 disasters annually!";
+    extraInfo.style.color = "#555";
+    description.parentElement.appendChild(extraInfo);
+  }
 });
 
 description.addEventListener('mouseleave', () => {
