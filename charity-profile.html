@@ -18,25 +18,26 @@
   </header>
 
   <main>
-   <section class="charity-profile">
-  <h1>Red Cross</h1>
-  <h2>Humanitarian Aid and Global Relief</h2>
-  <p>The Red Cross provides humanitarian aid worldwide, including disaster relief, blood donation drives, and other support efforts.</p>
+    <section class="charity-profile">
+      <h1>Red Cross</h1>
+      <h2>Humanitarian Aid and Global Relief</h2>
+      <p>The Red Cross provides humanitarian aid worldwide, including disaster relief, blood donation drives, and other support efforts.</p>
 
-  <!-- REAL Volunteer Now Button -->
-  <button id="volunteer-now-btn" class="cta-button">Volunteer Now</button>
+      <button id="volunteer-now-btn">Volunteer Now</button>
+      <form id="volunteer-form" style="display: none;">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
 
-  <!-- Hidden Volunteer Form -->
-  <form id="volunteer-form" style="display: none;">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
 
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required />
+        <button type="submit">Submit</button>
+      </form>
 
-    <button type="submit">Submit</button>
-  </form>
-</section>
+      <div id="charity-details" style="margin-top: 20px;">
+        <div class="info-box">Hover over me for more info!</div>
+      </div>
+    </section>
   </main>
 
   <footer>
