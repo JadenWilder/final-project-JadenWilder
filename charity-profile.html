@@ -19,22 +19,20 @@
 
   <main>
     <section class="charity-profile">
-      <h1 id="charity-name">Red Cross</h1>
-<div id="charity-details" style="display:none;">
-  <p>Additional details about Red Cross...</p>
-</div>
+      <h1>Red Cross</h1>
       <h2>Humanitarian Aid and Global Relief</h2>
       <p>The Red Cross provides humanitarian aid worldwide, including disaster relief, blood donation drives, and other support efforts.</p>
 
-      <h3>Volunteer Now</h3>
+      <button id="volunteer-now-btn">Volunteer Now</button>
       <form id="volunteer-form">
+        <form id="volunteer-form" style="display: none;">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required />
 
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required />
 
-        <button id="volunteer-button">Volunteer Now</button>
+        <button type="submit">Submit</button>
       </form>
     </section>
   </main>
@@ -43,7 +41,6 @@
     <p>Contact us at info@helphub.com</p>
   </footer>
 
-  <script src="scripts.js"></script>
   <script src="charity_profile.js"></script>
 </body>
 </html>
