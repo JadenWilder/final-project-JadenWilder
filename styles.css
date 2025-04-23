@@ -25,6 +25,7 @@ nav ul {
   padding: 0;
   margin: 0;
 }
+
 .info-box {
   width: 200px;
   height: 50px;
@@ -34,7 +35,6 @@ nav ul {
   margin: 20px auto;
   cursor: pointer;
 }
-
 
 nav a {
   color: white;
@@ -74,6 +74,12 @@ main {
   border-radius: 12px;
   padding: 1.5rem;
   box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.charity-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
 .charity-card h3 {
@@ -93,6 +99,7 @@ button {
   text-decoration: none;
   display: inline-block;
   margin-top: 1rem;
+  transition: background-color 0.3s ease;
 }
 
 .cta-button:hover,
@@ -124,6 +131,12 @@ input[type="email"] {
   margin-top: 0.25rem;
   border: 1px solid #ccc;
   border-radius: 6px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+  border-color: #0073e6;
 }
 
 /* Footer */
@@ -148,4 +161,12 @@ input:focus {
     animation-duration: 0s !important;
     transition-duration: 0s !important;
   }
+}
+
+/* External Link Styling */
+a[target="_blank"]::after {
+  content: " ↗";
+  font-size: 0.85em;
+  vertical-align: top;
+  color: #0073e6;
 }
