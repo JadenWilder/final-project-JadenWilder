@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HelpHub - Live Volunteering News</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="api-style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="charities.html">Charities</a></li>
+        <li><a href="charity-profile.html">Charity Profile</a></li>
+        <li><a href="api-integration.html">Volunteering News</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="api-section">
+      <h2>Latest Volunteering News</h2>
+      <div id="news-container">Loading news...</div>
+    </section>
+  </main>
+  <footer>
+    <p>Contact us at info@helphub.com</p>
+  </footer>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      fetch("https://api.publicapis.org/entries")
+        .then(res => res.json())
+        .then(data => {
+          const container = document.getElementById("news-container");
+          const entries = data.entries.filter(entry =>
+            entry.Category.toLowerCase().includes("charity") ||
+            entry.Description.toLowerCase().includes("volunteer")
+          );
+          container.innerHTML = entries.slice(0, 5).map(api => `
+            <div class="news-item">
+              <h3>${api.API}</h3>
+              <p>${api.Description}</p>
+              <a href="${api.Link}" target="_blank" class="cta-button">Visit API</a>
+            </div>
+          `).join("");
+          if (entries.length === 0) container.innerHTML = '<p>No related entries found.</p>';
+        })
+        .catch(err => {
+          document.getElementById("news-container").innerHTML = "<p>Error loading data. Please try again later.</p>";
+          console.error(err);
+        });
+    });
+  </script>
+</body>
+</html>
