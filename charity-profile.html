@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>HelpHub - Charities List</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HelpHub - Charity Profile</title>
   <link rel="stylesheet" href="styles.css" />
+  <script src="charity_profile.js" defer></script>
 </head>
 <body>
   <header>
@@ -12,36 +13,28 @@
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="charities.html">Charities</a></li>
-        <li><a href="charity_profile.html">Charity Profile</a></li>
       </ul>
     </nav>
   </header>
-
   <main>
-    <section class="charity-list">
-      <h1>Charities Near You</h1>
-      <h2>Explore trusted organizations in your community</h2>
+    <section class="charity-profile">
+      <h1>Charity Profile</h1>
+      <h2>Learn More and Volunteer</h2>
+      <p>This page is where users can input their contact info and get involved with a selected charity.</p>
 
-      <div class="charity-card">
-        <h3>Red Cross</h3>
-        <p>Helping people in need around the world.</p>
-        <a href="https://www.redcross.org/" target="_blank" class="cta-button">View Profile</a>
-      </div>
+      <button id="volunteer-now-btn" class="cta-button">Volunteer Now</button>
 
-      <div class="charity-card">
-        <h3>Food Bank</h3>
-        <p>Providing food to local families in need.</p>
-        <a href="https://www.harvesthope.org/" target="_blank" class="cta-button">View Profile</a>
-      </div>
+      <form id="volunteer-form" style="display: none;">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
 
-      <div class="charity-card">
-        <h3>Animal Shelter</h3>
-        <p>Helping abandoned animals find loving homes.</p>
-        <a href="https://www.findpawpal.com/animal-shelter/?msclkid=cf475a3db0aa1b9945be3234dc6ca300&utm_source=bing&utm_medium=cpc&utm_campaign=FPP%20-%20Maxall%20-%20Animal%20Shelter%20-%20Desktop%20-%20240220&utm_term=animal%20shelter&utm_content=Animal%20Shelter" target="_blank" class="cta-button">View Profile</a>
-      </div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <button type="submit">Submit</button>
+      </form>
     </section>
   </main>
-
   <footer>
     <p>Contact us at info@helphub.com</p>
   </footer>
