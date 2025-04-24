@@ -1,0 +1,23 @@
+.api-section {
+  max-width: 800px;
+  margin: 2rem auto;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.api-section h2 {
+  text-align: center;
+  color: #004080;
+}
+
+.news-item {
+  margin-bottom: 1.5rem;
+}
+
+.news-item h3 {
+  margin-bottom: 0.25rem;
+  color: #0073e6;
+}
